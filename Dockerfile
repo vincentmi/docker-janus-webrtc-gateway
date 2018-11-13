@@ -30,5 +30,6 @@ COPY conf/*.cfg /opt/janus/etc/janus/
 # Declare the ports we use
 EXPOSE 80 7088 8088 8188
 
+ENV STUN_SERVER=127.0.0.1:3478
 # Define the default start-up command
 CMD ./startup.sh
